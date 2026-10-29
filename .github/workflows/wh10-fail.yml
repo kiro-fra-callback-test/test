@@ -1,0 +1,7 @@
+name: wh10 failing check
+on: pull_request
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Webhooks 10 test, failing on purpose" && exit 1
